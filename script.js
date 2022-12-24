@@ -65,9 +65,9 @@ const DomElement = function (selector, height, width, bg, fontSize) {
 };
 
 const domElement1 = new DomElement('.block', 100, 300, 'blue');
-//domElement1.createElem();
+domElement1.createElem();
 const domElement2 = new DomElement('#block', '100px', '100vw', 'green', '45px');
-//domElement2.createElem();
+domElement2.createElem();
 
 // усложненка
 const domElement3 = new DomElement('.block', 100, 100, 'pink');
