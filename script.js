@@ -47,7 +47,7 @@ const DomElement = function (selector, height, width, bg, fontSize) {
 
     this.moveElemtoDown = function () {
         console.log(elem.getBoundingClientRect().bottom);
-        elem.style.bottom = +elem.getBoundingClientRect().bottom + 10 + 'px';
+        elem.style.top = +elem.getBoundingClientRect().top + 10 + 'px';
         console.log(elem.getBoundingClientRect().bottom);
     };
 
@@ -59,7 +59,7 @@ const DomElement = function (selector, height, width, bg, fontSize) {
 
     this.moveElemtoRight = function () {
         console.log(elem.getBoundingClientRect().right);
-        elem.style.right = +elem.getBoundingClientRect().right + 10 + 'px';
+        elem.style.left = +elem.getBoundingClientRect().left + 10 + 'px';
         console.log(elem.getBoundingClientRect().right);
     };
 };
