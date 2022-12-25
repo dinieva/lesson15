@@ -40,27 +40,19 @@ const DomElement = function (selector, height, width, bg, fontSize) {
     };
 
     this.moveElemtoUp = function () {
-        console.log(elem.getBoundingClientRect().top);
         elem.style.top = +elem.getBoundingClientRect().top - 10 + 'px';
-        console.log(elem.getBoundingClientRect().top);
     };
 
     this.moveElemtoDown = function () {
-        console.log(elem.getBoundingClientRect().bottom);
         elem.style.top = +elem.getBoundingClientRect().top + 10 + 'px';
-        console.log(elem.getBoundingClientRect().bottom);
     };
 
     this.moveElemtoLeft = function () {
-        console.log(elem.getBoundingClientRect().left);
         elem.style.left = +elem.getBoundingClientRect().left - 10 + 'px';
-        console.log(elem.getBoundingClientRect().left);
     };
 
     this.moveElemtoRight = function () {
-        console.log(elem.getBoundingClientRect().right);
         elem.style.left = +elem.getBoundingClientRect().left + 10 + 'px';
-        console.log(elem.getBoundingClientRect().right);
     };
 };
 
@@ -104,7 +96,5 @@ function moveSquare(e) {
         domElement3.name();
     };
     func1(functionName); */
-
-
 }
 console.log(domElement3);
